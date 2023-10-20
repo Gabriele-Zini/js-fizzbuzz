@@ -9,19 +9,19 @@ for (let i = 1; i <= 100; i++) {
   if ((i % 3 === 0) & (i % 5 === 0)) {
     console.log("FizzBuzz");
     result = "FizzBuzz";
-    color= "fizz-buzz"
+    color= "ms_fizz-buzz"
   } else if (i % 3 === 0) {
     console.log("Fizz");
     result = "Fizz";
-    color= "fizz"
+    color= "ms_fizz"
   } else if (i % 5 === 0) {
     console.log("Buzz");
     result = "Buzz";
-    color= "buzz"
+    color= "ms_buzz"
   } else {
     console.log(i);
     result = `${i}`;
-    color="normal"
+    color="ms_normal"
   }
   elementGrid += `<div class="${color} col-3 col-md-2 ms_col d-flex card">${result}</div>`;
 }

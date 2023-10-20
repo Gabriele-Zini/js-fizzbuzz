@@ -19,22 +19,22 @@ body {
 
 /* Utilities */
 
-.fizz-buzz {
-    color:red;
+.ms_fizz-buzz {
+    color: red;
     background-color: rgba(245, 245, 220, 0.914);
 }
 
-.fizz {
-    color:blue;
+.ms_fizz {
+    color: blue;
     background-color: rgba(144, 238, 144, 0.916)
 }
 
-.buzz {
+.ms_buzz {
     color: white;
     background-color: rgba(240, 128, 128, 0.932) ;
 }
 
-.normal {
+.ms_normal {
     background-color: rgba(173, 216, 230, 0.948);
 }
 
@@ -50,6 +50,13 @@ body {
     border-radius: 10px;
 }
 
+.ms_gutter > [class*='col-'] {
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
 /* media query tablet */
 @media screen and (min-width: 768px) {
 
@@ -63,6 +70,12 @@ body {
     .ms_col {
         border-radius: 20px;
     }
+    .ms_gutter > [class*='col-'] {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
     
 }
 
@@ -76,5 +89,4 @@ body {
     .ms_col {
         border-radius: 30px;
     }
-    
 }
