@@ -9,7 +9,7 @@ Write a program that prints numbers from 1 to 100 to the console, but for multip
 
 Set up a for loop from 1 to 100 with three conditions.
 
-1. The first condition is for numbers that are multiples of both 3 and 5; set the boolean operator in the condition, and print 'FizzBuzz'.
+1. The first condition is for numbers that are multiples of both 3 and 5; set the boolean operator "AND" in the condition, and print 'FizzBuzz'.
 
 2. The second condition is for numbers that are multiples only of 3 print 'Fizz'.
 
@@ -25,22 +25,23 @@ for (let i = 1; i <= 100; i++) {
   if ((i % 3 === 0) & (i % 5 === 0)) {
     console.log("FizzBuzz");
     result = "FizzBuzz";
-    color= "fizz-buzz"
+    color= "ms_fizz-buzz"
   } else if (i % 3 === 0) {
     console.log("Fizz");
     result = "Fizz";
-    color= "fizz"
+    color= "ms_fizz"
   } else if (i % 5 === 0) {
     console.log("Buzz");
     result = "Buzz";
-    color= "buzz"
+    color= "ms_buzz"
   } else {
     console.log(i);
     result = `${i}`;
-    color="normal"
+    color="ms_normal"
   }
   elementGrid += `<div class="${color} col-3 col-md-2 ms_col d-flex card">${result}</div>`;
 }
+
 
 ```
 <br>
