@@ -1,0 +1,80 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* COMMON */
+body {
+    background-image: url(../img/polka-dots.png);
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.ms_title {
+    font-size: 3rem;
+}
+
+/* Utilities */
+
+.fizz-buzz {
+    color:red;
+    background-color: rgba(245, 245, 220, 0.914);
+}
+
+.fizz {
+    color:blue;
+    background-color: rgba(144, 238, 144, 0.916)
+}
+
+.buzz {
+    color: white;
+    background-color: rgba(240, 128, 128, 0.932) ;
+}
+
+.normal {
+    background-color: rgba(173, 216, 230, 0.948);
+}
+
+.ms_row {
+    display: flex;
+}
+
+.ms_col {
+    aspect-ratio: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+/* media query tablet */
+@media screen and (min-width: 768px) {
+
+    .ms_col {
+        font-size: 1.6rem;
+        
+    }
+    .ms_title {
+        font-size: 6rem;
+    }
+    .ms_col {
+        border-radius: 20px;
+    }
+    
+}
+
+/* media query desktop */
+@media screen and (min-width: 992px) {
+
+    .ms_col {
+        font-size: 2.5rem;
+    }
+
+    .ms_col {
+        border-radius: 30px;
+    }
+    
+}
